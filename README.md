@@ -69,3 +69,22 @@ Aditube supports multiple languages. To configure this, follow the instructions 
 ### Customization
 
 You can customize the login page, add external login methods, or define sellable positions. The **Menu Editor** allows administrators to add custom items to the menu, such as links to information pages or database management tools.
+
+
+### AI Banner Generation
+
+A simple Python script is included to generate banner ad copy with the help of an LLM. The script uses the `transformers` library and a small GPT-Neo model.
+
+To generate text for a banner run:
+
+```bash
+python3 ai_tools/banner_generator.py "<your product description>"
+```
+
+Install `transformers` if it is not already available:
+
+```bash
+pip install transformers
+```
+
+The script prints a short piece of ad copy that can be used when creating new banners.
